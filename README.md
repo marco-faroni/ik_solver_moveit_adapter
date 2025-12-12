@@ -27,7 +27,7 @@ The default installation also downloads an analytical IK solver for Universal Ro
 	to
 	```
 	option(COMPILE_ROS2_MODULE "ROS 2 INTEGRATION SUPPORT" ON)
-```
+	```
 
 - Build the ws:
 	```
