@@ -66,6 +66,7 @@ To launch an example with a UR5e robot:
 - Then ```ros2 launch ik_solver_moveit_adapter ur5e_analytical_ik.launch.py```
 
 - Try to request an IK from terminal:
+
 ```
 ros2 service call /compute_ik moveit_msgs/srv/GetPositionIK "ik_request:
   group_name: 'manipulator'
