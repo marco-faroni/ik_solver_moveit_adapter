@@ -12,13 +12,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-#find_package(ik_solver REQUIRED)
+find_package(ik_solver_msgs REQUIRED)
 
 set(THIS_PACKAGE_DEPENDS
   rclcpp
   moveit_msgs
   geometry_msgs
-  #ik_solver
+  ik_solver_msgs
 )
 
 # ================================
