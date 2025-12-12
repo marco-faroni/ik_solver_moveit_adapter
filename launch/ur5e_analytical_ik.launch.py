@@ -24,7 +24,9 @@ def generate_launch_description():
             {
                 "custom_ik_service_name": "/ur_ik_solver/get_ik",
                 "moveit_service_name": "/ik_adapter_service",
-                "seed_weights": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] # per-joint weights to computed weighted distance from seed
+                # per-joint weights to computed weighted distance from seed
+                # [0.0, 0.0,0.0,0.0,0.0,0.0] is random choice!
+                "seed_weights": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] 
             }
         ]
     )
