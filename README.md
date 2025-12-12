@@ -11,7 +11,7 @@ The default installation also downloads an analytical IK solver for Universal Ro
 - Download this package and its dependencies:
 	```
 	cd {your_ws}/src
-	git clone https://github.com/MerlinLaboratory/ik_solver_moveit_adapter
+	git clone https://github.com/marco-faroni/ik_solver_moveit_adapter
 	vcs import < ik_solver_moveit_adapter/deps.repos
 	git clone --recurse-submodules https://github.com/JRL-CARI-CNR-UNIBS/cnr_common.git
 	sudo apt update
