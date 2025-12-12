@@ -50,7 +50,8 @@ The default installation also downloads an analytical IK solver for Universal Ro
 
 To use the custom IK in MoveIt you need to load the ```srv_kinematics_plugin``` instead of the default IK solver in your moveit_config package.
 
-To do so, open ```{your moveit config package}/config/kinematics.yaml` and set 
+To do so, open ```{your moveit config package}/config/kinematics.yaml``` and set 
+
 	```
 	kinematics_solver: srv_kinematics_plugin/SrvKinematicsPlugin
 	kinematics_solver_service_name: "/ik_adapter_service"
@@ -65,7 +66,7 @@ To launch an example with a UR5e robot:
 - Then ```ros2 launch ik_solver_moveit_adapter ur5e_analytical_ik.launch.py```
 
 - Try to request an IK from terminal:
-	```
+```
 ros2 service call /compute_ik moveit_msgs/srv/GetPositionIK "ik_request:
   group_name: 'manipulator'
   robot_state:
@@ -120,7 +121,7 @@ ros2 service call /compute_ik moveit_msgs/srv/GetPositionIK "ik_request:
   timeout:
     sec: 0
     nanosec: 0"
-	```
+```
 
 ## Configuration
 
