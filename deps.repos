@@ -5,6 +5,9 @@ repositories:
   ik_solver:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver.git
+  ik_solver_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver_msgs.git
   ur_ik_solver:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver.git
