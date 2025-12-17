@@ -39,7 +39,7 @@ The default installation also downloads an analytical IK solver for Universal Ro
 - Export some environmental variable to make ```cnr_param``` and ```cnr_logger``` work:
 	```
 	echo 'export CNR_PARAM_ROOT_DIRECTORY="/tmp/cnr_param"' >> ~/.bashrc
-	echo 'export IK_SOLVER_LOGGER_CONFIG_PATH="{path to your ws}/src/ik_solver/logger_config.yaml"' >> ~/.bashrc
+	echo 'export IK_SOLVER_LOGGER_CONFIG_PATH="{path to your ws}/src/ik_solver/ik_solver_core/config/default_logger.yaml"' >> ~/.bashrc
 	source ~/.bashrc
 	```
 
@@ -127,3 +127,7 @@ ros2 service call /compute_ik moveit_msgs/srv/GetPositionIK "ik_request:
 ## Configuration
 
 To configure your IK plugin see [here](config/example_ur5e.yaml), [here](launch/ur5e_analytical_ik.launch.py), and [here](https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver/tree/ros2/config).
+
+## ToDo
+
+- create an executable using intra-communication options to reduce overheads
